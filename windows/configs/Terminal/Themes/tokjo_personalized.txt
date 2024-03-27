@@ -1,0 +1,51 @@
+Personal Light-Mode Theme
+
+{
+    "background": "#E4EAF2",
+    "black": "#363647",
+    "blue": "#34548A",
+    "brightBlack": "#8080AB",
+    "brightBlue": "#4B79C7",
+    "brightCyan": "#197BB5",
+    "brightGreen": "#519E93",
+    "brightPurple": "#9379C4",
+    "brightRed": "#CC6276",
+    "brightWhite": "#6B79B5",
+    "brightYellow": "#C4791D",
+    "cursorColor": "#6C7BB8",
+    "cyan": "#0F4B6E",
+    "foreground": "#6C7BB8",
+    "green": "#33635C",
+    "name": "Tokyo Night Light",
+    "purple": "#5A4A78",
+    "red": "#8C4351",
+    "selectionBackground": "#ABD1D9",
+    "white": "#394161",
+    "yellow": "#8F5815"
+}
+
+Darkmode Theme
+
+{
+    "background": "#1A1B2C",
+    "black": "#414868",
+    "blue": "#7AA2F7",
+    "brightBlack": "#414868",
+    "brightBlue": "#7AA2F7",
+    "brightCyan": "#7DCFFF",
+    "brightGreen": "#73DACA",
+    "brightPurple": "#BB9AF7",
+    "brightRed": "#F7768E",
+    "brightWhite": "#C0CAF5",
+    "brightYellow": "#E0AF68",
+    "cursorColor": "#C0CAF5",
+    "cyan": "#7DCFFF",
+    "foreground": "#A9B1DC",
+    "green": "#73DACA",
+    "name": "Tokyo Night",
+    "purple": "#BB9AF7",
+    "red": "#F7768E",
+    "selectionBackground": "#28344A",
+    "white": "#C0CAF5",
+    "yellow": "#E0AF68"
+}

@@ -1,0 +1,14 @@
+winget install JanDeDobbeleer.OhMyPosh -s winget
+oh-my-posh font install 
+-> Meslo
+Install-Module PSReadLine -Force
+tools: install strawberry perl
+https://strawberryperl.com/
+
+dev prompt:
+powershell.exe -NoExit & 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1' -Arch amd64 -HostArch amd64
+
+
+Theme:
+https://github.com/catppuccin/windows-terminal/blob/main/macchiato.json
+
