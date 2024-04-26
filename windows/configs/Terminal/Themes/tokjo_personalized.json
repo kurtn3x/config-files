@@ -1,6 +1,5 @@
-Personal Light-Mode Theme
-
 {
+    "__COMMENT": "Personal Lightmode Theme",
     "background": "#E4EAF2",
     "black": "#363647",
     "blue": "#34548A",
@@ -22,11 +21,9 @@ Personal Light-Mode Theme
     "selectionBackground": "#ABD1D9",
     "white": "#394161",
     "yellow": "#8F5815"
-}
-
-Darkmode Theme
-
+},
 {
+    "__COMMENT": "Personal Darkmode Theme",
     "background": "#1A1B2C",
     "black": "#414868",
     "blue": "#7AA2F7",

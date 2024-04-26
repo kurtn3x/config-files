@@ -1,83 +1,107 @@
-# config-files
+# Personal Linux Tweaks
+
+---
+- [Personal Linux Tweaks](#personal-linux-tweaks)
+  - [General](#general)
+  - [yay](#yay)
+  - [zsh](#zsh)
+  - [Vim](#vim)
+  - [Fonts](#fonts)
+  - [lsd](#lsd)
+  - [Konsole](#konsole)
+  - [Settings](#settings)
+    - [Konsole/Terminal Settings](#konsoleterminal-settings)
+    - [KDE Themes](#kde-themes)
+---
 
 ## General
 
-rmdir /home/$USERNAME/Videos
+- Remove home folders
+    ```
+    rmdir /home/$USERNAME/Videos
+    rmdir /home/$USERNAME/Pictures
+    rmdir /home/$USERNAME/Templates
+    rmdir /home/$USERNAME/Public
+    rmdir /home/$USERNAME/Music
+    ```
+- Install basic stuff
+    ```
+    sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g --noconfirm --needed
+    ```
 
-rmdir /home/$USERNAME/Pictures
+## yay
 
-rmdir /home/$USERNAME/Templates
+- Install yay
+    ```
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    ```
 
-rmdir /home/$USERNAME/Public
+## zsh
 
-rmdir /home/$USERNAME/Music
+- Install ZSH & Plugins
+    ```
+    sudo pacman -S zsh
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
 
-sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g --noconfirm --needed
+- Use config files from this repository
+    ```
+    mv zshrc ~/.zshrc
+    mv p10k.zsh ~/.p10k.zsh
+    ```
 
-## YAY
+## Vim
 
-git clone https://aur.archlinux.org/yay.git
+- Install VIM-Plugins
+    ```
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    ```
+- Use config files from this repository
+    ```
+    mv vimrc ~/.vimrc
+    ```
 
-cd yay
+## Fonts
 
-makepkg -si
+- Install FiraCodeFont from this repository
+    ```
+    mkdir -p /usr/local/share/fonts/TTF
+    mv FireCodeFont/* /usr/local/share/fonts/TTF
+    ```
+## lsd
 
-## ZSH
-
-sudo pacman -S zsh
-
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-mv zshrc ~/.zshrc
-
-mv vimrc ~/.vimrc
-
-mv p10k.zsh ~/.p10k.zsh
-
-## FONT
-
-mkdir -p /usr/local/share/fonts/TTF
-
-mv FireCodeFont/\* /usr/local/share/fonts/TTF
-
-## LSD
-
-mkdir -p ~/.config/lsd
-
-mv config.yaml ~/.config/lsd
+- Use config files from this repository
+    ```
+    mkdir -p ~/.config/lsd
+    mv config.yaml ~/.config/lsd
+    ```
 
 ## Konsole
 
-mv my.colorscheme ~/.local/share/konsole
+- Use colorscheme from this repository
+    ```
+    mv my.colorscheme ~/.local/share/konsole
+    ```
 
-**Settings**
+## Settings
 
-Scheme: The one in this repository
+### Konsole/Terminal Settings
 
-Font: Firacode 11pt
+- Colorscheme: The one in this repository
+- Font: Firacode 11pt
+- Cursor Blinking enabled
 
-Cursor Blinking enabled
+### KDE Themes
 
-## KDE Themes
-
-global theme = breeze dark
-
-Colors = sweet
-
-application style = breeze
-
-plasma style = layan
-
-Windows decorations = Willow Dark / any windows10/11 like
-
-Icons = Windows-Beuty / any windows11 like
-
-Cursor = Breeze light
+- global theme = breeze dark
+- Colors = sweet
+- application style = breeze
+- plasma style = layan
+- Windows decorations = Willow Dark / any windows10/11 like
+- Icons = Windows-Beuty / any windows11 like
+- Cursor = Breeze light
