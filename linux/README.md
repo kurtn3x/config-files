@@ -9,6 +9,7 @@
   - [Fonts](#fonts)
   - [lsd](#lsd)
   - [Konsole](#konsole)
+  - [Grub](#grub)
   - [Settings](#settings)
     - [Konsole/Terminal Settings](#konsoleterminal-settings)
     - [KDE Themes](#kde-themes)
@@ -26,7 +27,7 @@
     ```
 - Install basic stuff
     ```
-    sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g --noconfirm --needed
+    sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g wireguard-tools --noconfirm --needed
     ```
 
 ## yay
@@ -44,15 +45,13 @@
     ```
     sudo pacman -S zsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    ```
-    
+    ``` 
 - Install ZSH-Plugins
     ```
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
-    
 - Use config files from this repository
     ```
     mv zshrc ~/.zshrc
@@ -90,6 +89,19 @@
 - Use colorscheme from this repository
     ```
     mv my.colorscheme ~/.local/share/konsole
+    ```
+
+## Grub
+
+- Enable os prober
+    ```
+    echo "GRUB_DISABLE_OS_PROBER=false" | sudo tee -a /etc/default/grub
+    ```
+- Install Grub Theme (also creates new grub conf)
+    ```
+    git clone https://github.com/vinceliuice/grub2-themes
+    cd grub2-themes
+    sudo ./install.sh -t tela -s 2k
     ```
 
 ## Settings
