@@ -18,11 +18,11 @@
 
 - Remove home folders
     ```
-    rmdir /home/$USERNAME/Videos
-    rmdir /home/$USERNAME/Pictures
-    rmdir /home/$USERNAME/Templates
-    rmdir /home/$USERNAME/Public
-    rmdir /home/$USERNAME/Music
+    rmdir /home/$USER/Videos
+    rmdir /home/$USER/Pictures
+    rmdir /home/$USER/Templates
+    rmdir /home/$USER/Public
+    rmdir /home/$USER/Music
     ```
 - Install basic stuff
     ```
@@ -44,11 +44,15 @@
     ```
     sudo pacman -S zsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+    
+- Install ZSH-Plugins
+    ```
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
-
+    
 - Use config files from this repository
     ```
     mv zshrc ~/.zshrc
@@ -70,8 +74,8 @@
 
 - Install FiraCodeFont from this repository
     ```
-    mkdir -p /usr/local/share/fonts/TTF
-    mv FireCodeFont/* /usr/local/share/fonts/TTF
+    sudo mkdir -p /usr/local/share/fonts/TTF
+    sudo mv FiraCodeFont/* /usr/local/share/fonts/TTF
     ```
 ## lsd
 
@@ -93,15 +97,16 @@
 ### Konsole/Terminal Settings
 
 - Colorscheme: The one in this repository
-- Font: Firacode 11pt
+- Font: Firacode Nerd Font Mono 11pt
 - Cursor Blinking enabled
 
 ### KDE Themes
 
 - global theme = breeze dark
-- Colors = sweet
+- Colors = sweet (Sweet KDE) Accent #0085e0
 - application style = breeze
 - plasma style = layan
 - Windows decorations = Willow Dark / any windows10/11 like
 - Icons = Windows-Beuty / any windows11 like
 - Cursor = Breeze light
+- Icons-Only TaskManager Spacing: large
