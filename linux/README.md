@@ -1,5 +1,7 @@
 # Personal Linux Tweaks
 
+The tweaks are made for a fresh Arch-Linux-System (After plasma has been installed).
+
 ---
 - [Personal Linux Tweaks](#personal-linux-tweaks)
   - [General](#general)
@@ -74,7 +76,7 @@
 - Install FiraCodeFont from this repository
     ```
     sudo mkdir -p /usr/local/share/fonts/TTF
-    sudo mv FiraCodeFont/* /usr/local/share/fonts/TTF
+    sudo mv ../FiraCodeFont/* /usr/local/share/fonts/TTF
     ```
 ## lsd
 
@@ -109,13 +111,13 @@
 ### Konsole/Terminal Settings
 
 - Colorscheme: The one in this repository
-- Font: Firacode Nerd Font Mono 11pt
-- Cursor Blinking enabled
+- Font: Firacode Nerd Font Mono 11pt (Smooth fonts, draw intense colors in bold font, use line characters contained in font)
+- Cursor Block, Match current character, Blinking enabled
 
 ### KDE Themes
 
 - global theme = breeze dark
-- Colors = sweet (Sweet KDE) Accent #0085e0
+- Colors = sweet (Sweet KDE) Accent #1097c3
 - application style = breeze
 - plasma style = layan
 - Windows decorations = Willow Dark / any windows10/11 like
