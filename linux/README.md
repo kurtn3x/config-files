@@ -108,8 +108,10 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
     ```
     git clone https://github.com/vinceliuice/grub2-themes
     cd grub2-themes
-    sudo ./install.sh -t tela
+    sudo ./install.sh -t tela -s 2k
     ```
+  - Check /etc/default/grub for ```GRUB_THEME=```and ```GRUB_BACKGROUND=```. If the paths are somewhere at /usr/share, manually move the theme folder to /boot/grub/themes. e.g. move ```/usr/share/grub/themes/tela``` to ```/boot/grub/themes/tela```. Adjust the mentioned variables accordingly, e.g. ```GRUB_THEME=/boot/grub/themes/tela/theme.txt``` and ```GRUB_BACKGROUND=/boot/grub/themes/tela/background.jpg```
+  - Run ```sudo grub-mkconfig -o /boot/grub/grub.cfg```
 
 ## Settings
 
