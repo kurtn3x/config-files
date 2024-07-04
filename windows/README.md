@@ -1,5 +1,7 @@
 # Personal Windows Tweaks
+
 ---
+
 - [Personal Windows Tweaks](#personal-windows-tweaks)
   - [General](#general)
   - [Windows Style](#windows-style)
@@ -9,98 +11,105 @@
     - [Settings](#settings)
   - [Nvim](#nvim)
   - [Other Stuff](#other-stuff)
+
 ---
 
 ## General
 
-__Powershell__ 
+**Powershell**
 
-- ```winget install --id Microsoft.Powershell --source winget```
+- ```
+  winget install --id Microsoft.Powershell --source winget
+  ```
 
-__Windows Terminal__
+**Windows Terminal**
 
-- Install via Microsoft Store
+- Download from https://github.com/microsoft/terminal/releases/latest
 
-__scoop__
+**scoop**
 
-```
+- ```
   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
   irm get.scoop.sh | iex
   ```
 
 ## Windows Style
 
-__StartAllBack__
+**StartAllBack**
 
-- ```winget install startallback``` 
+- ```
+  winget install startallback
+  ```
 - (https://www.startallback.com/) | requires license
 
-__Explorer Patcher__
+**Explorer Patcher**
 
 - https://github.com/valinet/ExplorerPatcher
 - May cause severe Problems
 
 ## Bloatware Remover / Security
 
-__Windows 10 Debloater__
+**Windows 10 Debloater**
 
-- ```iwr -useb https://git.io/debloat|iex``` \
+- `iwr -useb https://git.io/debloat|iex`
 - (https://github.com/Sycnex/Windows10Debloater)
 
-__Windows Optimizer__
+**Windows Optimizer**
 
 - https://github.com/hellzerg/optimizer
 
-__Simplewall (Replaces Windows-Firewall)__
+**Simplewall (Replaces Windows-Firewall)**
 
 - https://github.com/henrypp/simplewall
-
-Make sure to block all traffic by default
+- Make sure to block all traffic by default
 
 ## PowerShell Tweaks
 
 ### Plugins
 
-__Oh My Posh (https://ohmyposh.dev/)__
+**Oh My Posh (https://ohmyposh.dev/)**
 
-- ```winget install JanDeDobbeleer.OhMyPosh -s winget``` 
+- ```
+  winget install JanDeDobbeleer.OhMyPosh -s winget
+  ```
 - Themes: https://ohmyposh.dev/docs/themes
 
-__PSReadLine__
+**PSReadLine**
 
-```
-Install-Module -Name PowerShellGet -Force
-Install-Module PSReadLine
-```
+- ```
+  Install-Module -Name PowerShellGet -Force
+  Install-Module PSReadLine
+  ```
 
-__lsd (better ls)__
+**lsd (better ls)**
 
-- ```scoop install lsd```
-- Install config from configs/lsd to ```%APPDATA%\lsd\config.yaml```
+- ```
+  scoop install lsd
+  ```
+- Copy the file `configs/lsd/config.yml` in this repository to `%APPDATA%\lsd\config.yaml`.
 
 ### Settings
 
-- **Install Configs under configs/Powershell to enable Plugins**
+- Copy the files under `configs/PowerShell` in this repository to `%CSIDL_MYDOCUMENTS%\PowerShell` (The PowerShell-Folder in the Documents-Directory).
+- Colorscheme: The Scheme(s) from `configs/Terminal/Themes/tokjo_personalized.json`in this repository. Terminal-Settings and click _Open JSON File_ in the bottom left. Append the Colorschemes to the other colorschemes in the file.
 - Font: FireCode Nerd Font Mono (Install from this repository)
 - FontSize: 12
 - Cursor shape: vintage
 - Automatically adjust lightness of indistinguishable text: always
 
-
 ## Nvim
 
-__Nvim__
+**Nvim**
 
-https://github.com/neovim/neovim/releases/latest/download/nvim-win64.msi
+- Download from https://github.com/neovim/neovim/releases/latest/download/nvim-win64.msi
 
-__NvChad__
+**NvChad**
 
-```
-git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
- ```
+- Nvim Tweaks, not required
+- ```
+  git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
+  ```
 
 ## Other Stuff
 
 - Strawberryperl (includes compilers, assemblers and more): https://strawberryperl.com/
-
-
