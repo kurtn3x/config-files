@@ -32,7 +32,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
   ```
 - Install basic stuff
   ```
-  sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g wireguard-tools noto-fonts-cjk  --noconfirm --needed
+  sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g wireguard-tools noto-fonts-cjk appmenu-gtk-module libdbusmenu-glib fzf  --noconfirm --needed
   ```
 
 ## yay
@@ -60,9 +60,11 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
   ```
 - Use config files from this repository
   ```
+  mv profile ~/.profile
   mv zshrc ~/.zshrc
   mv p10k.zsh ~/.p10k.zsh
   ```
@@ -83,7 +85,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 - Install FiraCodeFont from this repository
   ```
   sudo mkdir -p /usr/local/share/fonts/TTF
-  sudo mv ../FiraCodeFont/* /usr/local/share/fonts/TTF
+  sudo cp ../FiraCodeFont/* /usr/local/share/fonts/TTF
   ```
 
 ## lsd
