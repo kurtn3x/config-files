@@ -51,7 +51,9 @@
 
 **Windows 10 Debloater**
 
-- `iwr -useb https://git.io/debloat|iex`
+- ```
+  iwr -useb https://git.io/debloat|iex
+  ```
 - (https://github.com/Sycnex/Windows10Debloater)
 
 **Windows Optimizer**

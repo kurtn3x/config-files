@@ -32,7 +32,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
   ```
 - Install basic stuff
   ```
-  sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g wireguard-tools noto-fonts-cjk appmenu-gtk-module libdbusmenu-glib fzf  --noconfirm --needed
+  sudo pacman -S git zsh yakuake man-db keychain bat wget thunderbird firefox curl unzip zip lsd base-devel make thefuck os-prober qbittorrent ntfs-3g wireguard-tools noto-fonts-cjk appmenu-gtk-module libdbusmenu-glib fzf plymouth  --noconfirm --needed
   ```
 
 ## yay
@@ -132,9 +132,9 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 ### KDE Themes
 
 - global theme = breeze dark
-- Colors = sweet (Sweet KDE) Accent #1097c3
+- Colors = sweet (Sweet KDE) Accent #3d59a1
 - application style = breeze, gtk theme: tokyonight-dark-moon-bl-lb (tokyo night gtk theme)
-- plasma style = layan
+- plasma style = sweet/breeze/layan/w10xos-dark
 - Windows decorations = Willow Dark / any windows10/11 like; no borders
 - Icons = Windows-Beuty / any windows11 like
 - Cursor = Breeze light
@@ -144,3 +144,5 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 
 - **Firefox**: tokyo night
 - **Yakuake**: _set to autostart_, Keybinds: Open/Retract Yakuake (Global Shift+Enter); Full Screen Mode (Shift+Uparrow)
+- **ssh-agent**: `sudo systemctl --user enable ssh-agent.service`
+- **Nvidia drivers**: https://wiki.archlinux.org/title/NVIDIA

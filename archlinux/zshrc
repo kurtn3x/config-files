@@ -48,8 +48,5 @@ alias l='ls -l'
 alias la='ls -la'
 alias lt='ls --tree'
 
-# use keychain for ssh key saving
-eval $(keychain --eval --quiet id_ed25519 id_rsa)
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
