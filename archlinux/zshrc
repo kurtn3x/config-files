@@ -42,6 +42,9 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # use vim as default editor
 export EDITOR='vim'
 
+# start ssh-agent with 'systemctl --user enable ssh-agent.service --now'
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 # use lsd instead of ls and custom ls commands
 alias ls='lsd'
 alias l='ls -l'
