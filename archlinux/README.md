@@ -103,6 +103,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
   mkdir ~/.local/share/konsole
   mv konsole.profile ~/.local/share/konsole
   mv my.colorscheme ~/.local/share/konsole
+  echo "AddKeysToAgent yes" >> ~/.ssh/config
   ```
 
 ## Grub
