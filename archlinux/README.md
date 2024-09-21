@@ -45,7 +45,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
   ```
 - Install basic packages with yay:
   ```
-  yay -S sublime-text-4 vscodium-bin
+  yay -S sublime-text-4 visual-studio-code-bin
   ```
 
 ## zsh
@@ -100,6 +100,8 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 
 - Use colorscheme from this repository
   ```
+  mkdir ~/.local/share/konsole
+  mv konsole.profile ~/.local/share/konsole
   mv my.colorscheme ~/.local/share/konsole
   ```
 
@@ -122,13 +124,6 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 
 ## Settings
 
-### Konsole/Terminal Settings
-
-- Colorscheme: The one in this repository
-- Font: Firacode Nerd Font Mono 11pt (Smooth fonts, draw intense colors in bold font, use line characters contained in font)
-- Cursor Block, Match current character, Blinking enabled
-- Line spacing 2px, margins 1px
-
 ### KDE Themes
 
 - global theme = breeze dark
@@ -144,5 +139,5 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 
 - **Firefox**: tokyo night
 - **Yakuake**: _set to autostart_, Keybinds: Open/Retract Yakuake (Global Shift+Enter); Full Screen Mode (Shift+Uparrow)
-- **ssh-agent**: `sudo systemctl --user enable ssh-agent.service`
+- **ssh-agent**: `sudo systemctl --user enable ssh-agent.service --now`
 - **Nvidia drivers**: https://wiki.archlinux.org/title/NVIDIA
