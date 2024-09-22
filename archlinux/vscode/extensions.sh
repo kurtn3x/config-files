@@ -1,0 +1,26 @@
+#!/bin/bash
+code --install-extension batisteo.vscode-django
+code --install-extension charliermarsh.ruff
+code --install-extension davidanson.vscode-markdownlint
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension donjayamanne.python-environment-manager
+code --install-extension donjayamanne.python-extension-pack
+code --install-extension eamodio.gitlens
+code --install-extension editorconfig.editorconfig
+code --install-extension esbenp.prettier-vscode
+code --install-extension kevinrose.vsc-python-indent
+code --install-extension ms-python.black-formatter
+code --install-extension ms-python.debugpy
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension njpwerner.autodocstring
+code --install-extension redhat.ansible
+code --install-extension redhat.vscode-yaml
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension usernamehw.errorlens
+code --install-extension visualstudioexptteam.intellicode-api-usage-examples
+code --install-extension visualstudioexptteam.vscodeintellicode
+code --install-extension vue.volar
+code --install-extension wayou.vscode-todo-highlight
+code --install-extension wholroyd.jinja
+code --install-extension yzhang.markdown-all-in-one
