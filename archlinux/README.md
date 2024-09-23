@@ -72,9 +72,9 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 - Use config files from this repository
 
   ```shell
-  mv ./shell_configs/profile ~/.profile
-  mv ./shell_configs/zshrc ~/.zshrc
-  mv ./shell_configs/p10k.zsh ~/.p10k.zsh
+  cp ./shell_configs/profile ~/.profile
+  cp ./shell_configs/zshrc ~/.zshrc
+  cp ./shell_configs/p10k.zsh ~/.p10k.zsh
 
   ```
 
@@ -89,7 +89,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 - Use config files from this repository
 
   ```shell
-  mv ./shell_configs/vimrc ~/.vimrc
+  cp ./shell_configs/vimrc ~/.vimrc
   ```
 
 ## Fonts
@@ -117,8 +117,8 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 
   ```shell
   mkdir ~/.local/share/konsole
-  mv ./shell_configs/konsole.profile ~/.local/share/konsole
-  mv ./shell_configs/my.colorscheme ~/.local/share/konsole
+  cp ./shell_configs/konsole.profile ~/.local/share/konsole
+  cp ./shell_configs/my.colorscheme ~/.local/share/konsole
   echo "AddKeysToAgent yes" >> ~/.ssh/config
   ```
 
