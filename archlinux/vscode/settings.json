@@ -27,6 +27,8 @@
     "prettier.printWidth": 120,
     "prettier.singleQuote": true,
     "python.defaultInterpreterPath": "~/.venv/bin/python3",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.typeCheckingMode": "basic",
     "[python]": {
         "editor.tabSize": 4,
         "editor.defaultFormatter": "charliermarsh.ruff",
@@ -35,20 +37,18 @@
           }
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[JSON]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[YAML]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "redhat.telemetry.enabled": false
+
 }
