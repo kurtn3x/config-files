@@ -108,7 +108,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 
   ```shell
   mkdir -p ~/.config/lsd
-  mv ./shell_configs/lsd_config.yaml ~/.config/lsd
+  cp ./shell_configs/lsd_config.yaml ~/.config/lsd
   ```
 
 ## Konsole
