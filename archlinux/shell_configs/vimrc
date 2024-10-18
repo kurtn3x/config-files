@@ -22,14 +22,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-system-copy'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'file:///home/gmarik/path/to/plugin'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Bundle 'gmarik/vundle'
-Bundle 'flazz/vim-colorschemes'
 Bundle 'kien/ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
