@@ -11,8 +11,13 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
   - [lsd](#lsd)
   - [Konsole](#konsole)
   - [Grub](#grub)
-  - [Settings](#settings)
-    - [KDE Themes](#kde-themes)
+  - [KDE/ DE Settings](#kde-de-settings)
+    - [Installing](#installing)
+      - [Window Decoration and Kvantum Theme](#window-decoration-and-kvantum-theme)
+      - [Icons](#icons)
+    - [Settings](#settings)
+      - [KDE Colors and Themes](#kde-colors-and-themes)
+      - [Dolphin](#dolphin)
   - [Other Stuff](#other-stuff)
 
 ## General
@@ -48,7 +53,7 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
 - Install basic packages with yay:
 
   ```shell
-  yay -S sublime-text-4 visual-studio-code-bin spotify-adblock
+  yay -S sublime-text-4 visual-studio-code-bin spotify-adblock kvantum-qt6-git
   ```
 
 ## zsh
@@ -143,18 +148,72 @@ The setup is made for a fresh Arch-Linux-System (After plasma has been installed
   - Check /etc/default/grub for `GRUB_THEME=`and `GRUB_BACKGROUND=`. If the paths are somewhere at /usr/share, manually move the theme folder to /boot/grub/themes. e.g. move `/usr/share/grub/themes/tela` to `/boot/grub/themes/tela`. Adjust the mentioned variables accordingly, e.g. `GRUB_THEME=/boot/grub/themes/tela/theme.txt` and `GRUB_BACKGROUND=/boot/grub/themes/tela/background.jpg`
   - Run `sudo grub-mkconfig -o /boot/grub/grub.cfg`
 
-## Settings
+## KDE/ DE Settings
 
-### KDE Themes
+### Installing
 
-- global theme = breeze dark
-- Colors = sweet (Sweet KDE) Accent #3d59a1
-- application style = breeze, gtk theme: tokyonight-dark-moon-bl-lb (tokyo night gtk theme)
-- plasma style = sweet/breeze/layan/w10xos-dark
-- Windows decorations = Willow Dark / any windows10/11 like; no borders
-- Icons = Windows-Beuty / any windows11 like
-- Cursor = Breeze light
-- Icons-Only TaskManager Spacing: large
+#### Window Decoration and Kvantum Theme
+
+- ```shell
+  mkdir -p ~/.local/share/aurorae/themes && cp kde/WillowDark ~/.local/share/aurorae/themes
+  ```
+
+- ```shell
+  mkdir -p ~/.config/Kvantum && cp kde/Orchis-solid ~/.config/Kvantum
+  ```
+
+- -> `kvantummanager` -> Change / Delete Theme -> `Orchis-solidDark`
+
+#### Icons
+
+- Copy my iconset
+
+  - ```shell
+    cp -R kde/win-custom-icons ~/.local/share/icons
+    ```
+  
+- Icon Sources:
+  - [https://github.com/doncsugar/willow-theme/tree/main]
+  - [https://store.kde.org/p/1546069]
+  - [https://github.com/vinceliuice/Fluent-icon-theme]
+- Optional, for inheriting missing icons:
+  - Download and install Win11 icons [https://store.kde.org/p/1546069/]
+
+  - ```shell
+    wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons" sh
+    ```
+
+### Settings
+
+#### KDE Colors and Themes
+
+- **Global Theme**: Breeze Dark
+- **Colors**: Sweet (Sweet KDE) Accent #3d59a1
+- **Application Style**: kvantum-dark
+- **Plasma Style**: [https://www.pling.com/p/1368853]
+- **Windows Decorations**: Willow Dark
+- **Icons**: Windows Custom
+- **Cursors**: Breeze Light
+
+#### Dolphin
+
+- ```shell
+  cp ./kde/dolphinrc ~/.config/dolphinrc
+  ```
+
+- Toolbar:
+  - Back
+  - Foreward
+  - Up
+  - seperator
+  - icons
+  - compact
+  - details
+  - location bar -> change text hide text
+  - show hidden files -> change text hide text
+  - search
+  - filter
+  - split -> change text hide text
 
 ## Other Stuff
 

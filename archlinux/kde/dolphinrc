@@ -1,0 +1,25 @@
+MenuBar=Disabled
+
+[ContentDisplay]
+UsePermissionsFormat=NumericFormat
+
+[ContextMenu]
+ShowCopyMoveMenu=true
+ShowMoveToOtherSplitView=false
+
+[General]
+BrowseThroughArchives=true
+ShowFullPathInTitlebar=true
+Version=202
+ViewPropsTimestamp=2024,5,14,19,28,42.696
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gdk-pixbuf-thumbnailer,svgthumbnail
