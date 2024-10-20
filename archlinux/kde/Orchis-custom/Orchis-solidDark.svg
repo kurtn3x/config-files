@@ -6184,7 +6184,7 @@
        id="path393" />
     <path
        d="m1-80c-3.324 0-6 2.676-6 6h6z"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        id="path394" />
     <rect
@@ -6217,7 +6217,7 @@
        y="-80.667"
        width="26"
        height="6.6668"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        stroke-width="1.0541"
        id="rect396" />
@@ -6238,7 +6238,7 @@
        y="-74"
        width="26"
        height="26"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        id="rect398" />
   </g>
@@ -6256,7 +6256,7 @@
        y="-80"
        width="26"
        height="6"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        id="rect399" />
     <rect
@@ -6275,7 +6275,7 @@
        y="-80"
        width="26"
        height="6"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        id="rect401" />
     <rect
@@ -6294,7 +6294,7 @@
        y="-80"
        width="26"
        height="6"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        id="rect403" />
     <rect
@@ -6313,7 +6313,7 @@
        y="-80"
        width="26"
        height="6"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        id="rect405" />
     <rect
@@ -6332,7 +6332,7 @@
        y="-74"
        width="26"
        height="26"
-       fill="#161925"
+       fill="#4e5882"
        opacity=".8"
        id="rect407" />
   </g>
@@ -6341,7 +6341,7 @@
      transform="matrix(.99999 0 0 .99999 138 724)">
     <path
        d="m1-83h-6.0001l6.3e-5 9.0001h6z"
-       fill="#333"
+       fill="#706f6f"
        opacity="0"
        stroke-width="1.2248"
        id="path407" />
@@ -6365,7 +6365,7 @@
        y="-83"
        width="26"
        height="9.0001"
-       fill="#333"
+       fill="#706f6f"
        opacity="0"
        stroke-width="1.2248"
        id="rect409" />
